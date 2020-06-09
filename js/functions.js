@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
 		abrirMenu();
 		jQuery("html, body").animate({
 			"scrollTop" : jQuery(enlace).position().top
-		}, 500, );
+		}, 1000, );
 
 	})
 
@@ -35,7 +35,7 @@ jQuery(document).ready(function(){
 
 
 function abrirMenu(){
-	jQuery("header").toggleClass("open");
+	jQuery("header .container").toggleClass("open");
 	jQuery("header .container .hambur i").toggleClass("fa-times");
 	jQuery("header .container nav").toggleClass("open");
 }

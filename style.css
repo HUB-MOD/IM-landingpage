@@ -22,7 +22,19 @@ a{
 }
 
 header{
+	background-color: #fff;
+	background-image: linear-gradient(to top, rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('img/bglogo.png');
+	background-repeat: repeat-x;
 	padding: 15px 0;
+	position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+}
+
+header:hover{
+	background-color: #fff;
+	border-bottom: solid 2px #eee;
 }
 
 header .container{
@@ -43,6 +55,11 @@ header .container .hambur{
 
 header .container nav a{
 	margin: 0 11px 0 11px; 
+}
+
+header .container nav a:hover{
+	color: #000;
+	text-decoration: underline; 
 }
 
 .boton{
@@ -104,13 +121,14 @@ header .container nav a{
 
 #inicio{
 	position: relative;
-	background-color: gray;
+	background-color: #ccc;
 }
 
 #inicio img{
 	width: 100%;
 	opacity: 0.5;
 	display: block;
+	padding-top: 70px;
 }
 
 #inicio .bloque-banner{
@@ -352,7 +370,6 @@ footer .container p{
 
 	header.open{
 		position: fixed;
-		background-color: #fff;
 		width: 100%;
 		top: 0;
 		left: 0;
@@ -374,19 +391,21 @@ footer .container p{
 
 	header .container nav{
 	    position: fixed;
-	    height: 100%;
-	    width: 100%;
+	    height: 50%;
+	    width: 60%;
 	    background-color: #fff;
+	    opacity: .8;
 	    top: 0;
-	    left: 0;
+	    left: 40%;
 	    z-index: 2;
 	    display: flex;
 	    flex-direction: column;
 	    justify-content: center;
 	    text-align: center;
-	    padding: 80px 15px;
+	    padding: 50px 15px 15px 15px;
 	    transform: translate(100%);
-	    transition: all .8s ease-in;
+	    transition: all .8s ease-in-out;
+	    border-radius: 0 0 0 20px;
 	}
 
 	header .container nav.open{
@@ -405,11 +424,9 @@ footer .container p{
 	}
 
 	#inicio .bloque-banner{
-		width: 100%
-		padding-left: 15px;
 		padding-right: 15px;
 		margin-left: -15%;
-		top: 16%;
+		top: 38%;
 	}
 
 	#inicio .bloque-banner h1{
@@ -422,7 +439,7 @@ footer .container p{
 	}
 
 	#inicio .bloque-banner a{
-		font-size: 14px;
+		font-size: 13px;
 	}
 
 
@@ -465,6 +482,11 @@ footer .container p{
 @media(max-width: 457px)
 {
 
+	header .container nav{
+	    width: 70%; 
+	    left: 30%;
+	    
+}
 	#inicio .bloque-banner h1{
 		font-size: 15px;
 	}
