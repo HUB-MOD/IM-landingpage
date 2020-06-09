@@ -394,7 +394,7 @@ footer .container p{
 	    height: 50%;
 	    width: 60%;
 	    background-color: #fff;
-	    opacity: .8;
+	    opacity: .7;
 	    top: 0;
 	    left: 40%;
 	    z-index: 2;
@@ -402,7 +402,7 @@ footer .container p{
 	    flex-direction: column;
 	    justify-content: center;
 	    text-align: center;
-	    padding: 50px 15px 15px 15px;
+	    padding: 65px 15px 15px 15px;
 	    transform: translate(100%);
 	    transition: all .8s ease-in-out;
 	    border-radius: 0 0 0 20px;
