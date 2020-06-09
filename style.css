@@ -33,7 +33,7 @@ header .container{
 }
 
 header .container .logo{
-	width: 150px;
+	width: 130px;
 	height: auto;
 }
 
@@ -42,7 +42,7 @@ header .container .hambur{
 }
 
 header .container nav a{
-	margin: 0 15px 0 15px;
+	margin: 0 11px 0 11px; 
 }
 
 .boton{
@@ -124,7 +124,7 @@ header .container nav a{
 }
 
 #inicio .bloque-banner h1{
-	font-size: 35px;
+	font-size: 28px;
 	margin-top: 0;
 	margin-left: 15px;
 }
@@ -132,13 +132,17 @@ header .container nav a{
 #nosotros{
 	background-image: linear-gradient(to top, rgba(255,255,255,1.0), rgba(50,50,50,0.7)), url('img/colchon.jpg');
 	color: #fff;
-	font-size: 18px;
+	font-size: 23px;
+	font-style: italic;
 	text-align: center;
+	background-repeat: repeat;
+	background-size: cover;
 }
 
-#productos{
+#nosotros .container p{
+	margin: 0 5px; 
+	}
 
-}
 
 #productos .bloque-producto{
 	border: 1px solid #ddd;
@@ -286,7 +290,7 @@ footer.section{
 }
 
 footer .logo-footer{
-	width: 100%;
+	width: 70%;
 	height: auto;
 }
 
@@ -341,14 +345,58 @@ footer .container p{
 		width: 100%;
 	}
 
-	header .container .hambur{
-		display: block;
-		font-size: 25px;
+	.link-logo{
+		position: relative;
 		z-index: 3;
 	}
 
+	header.open{
+		position: fixed;
+		background-color: #fff;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: relative;
+	}
+
+	header .container .hambur{
+		display: block;
+	    font-size: 25px;
+	    position: relative;
+	    z-index: 3;
+	}
+
+	/*OTRA MANERA
+	header .container .hambur.open i::before{
+		content: "\f00d";
+	}
+	*/
+
 	header .container nav{
-	display: none;
+	    position: fixed;
+	    height: 100%;
+	    width: 100%;
+	    background-color: #fff;
+	    top: 0;
+	    left: 0;
+	    z-index: 2;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    text-align: center;
+	    padding: 80px 15px;
+	    transform: translate(100%);
+	    transition: all .8s ease-in;
+	}
+
+	header .container nav.open{
+		transform: translate(0%);
+	}
+
+	header .container nav a{
+	    font-size: 25px;
+	    margin-top: 7.5px;
+	    margin-bottom: 7.5px;
 	}
 
 	.section{
@@ -377,9 +425,6 @@ footer .container p{
 		font-size: 14px;
 	}
 
-	#nosotros{
-		font-size: 15px;
-	}
 
 	#galeria .cuadrado-perfecto h3{
 		font-size: 30px;
@@ -405,7 +450,7 @@ footer .container p{
 	}
 
 	footer .logo-footer{
-		width: 25%;
+		width: 45%;
 	}
 
 	footer.section{
@@ -421,7 +466,7 @@ footer .container p{
 {
 
 	#inicio .bloque-banner h1{
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	#inicio .bloque-banner p{
@@ -429,11 +474,25 @@ footer .container p{
 	}
 
 	#inicio .bloque-banner a{
-		font-size: 12px;
+		font-size: 9px;
 	}
 
 	#nosotros{
-		font-size: 12px;
+		font-size: 16px;
 	}
 
+}
+
+@media(max-width: 357px)
+{
+	#inicio .bloque-banner h1{
+		display: none;
+	}
+	#inicio .bloque-banner p{
+		display: block;
+		font-size: 10px;
+	}
+	#inicio .bloque-banner a{
+		font-size: 7px;
+	}
 }
