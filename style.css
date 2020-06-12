@@ -21,6 +21,7 @@ a{
 	text-decoration: none;
 }
 
+
 header{
 	background-color: #fff;
 	background-image: linear-gradient(to top, rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('img/bglogo.png');
@@ -44,7 +45,7 @@ header .container{
 }
 
 header .container .logo{
-	width: 130px;
+	width: 160px;
 	height: auto;
 }
 
@@ -282,6 +283,22 @@ header .container nav a:hover{
 	padding: 20px 30px 30px 30px;
 }
 
+#contactanos .container .form .main-form h4{
+	text-align: left;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+#contactanos .container .form .main-form p{
+	display: flex;
+	align-items: center;
+}
+
+#contactanos .container .form .main-form p label{
+	padding-left: 5px;
+}
+
 #contactanos .container form{
 	display: flex;
 	flex-direction: column;
@@ -325,6 +342,12 @@ footer ul.redes li a{
 	margin-bottom: 15px;
 	display: inline-block;
 
+}
+
+footer ul li a:hover{
+	color: #ddd;
+	font-weight: bold;
+	text-decoration: underline; 
 }
 
 footer .foot{

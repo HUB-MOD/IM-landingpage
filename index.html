@@ -147,11 +147,17 @@
 					<div class="main-form">
 						<form action="" method="POST">
 							<h3>RECIBE TODA LA INFO</h3>
-							<input type="text" placeholder="Nombres" name="nombre" class="box"></input>
-							<input type="text" placeholder="Apellidos" name="apellido" class="box"></input>
-							<input type="text" placeholder="Teléfono" name="telefono" class="box"></input>
-							<input type="text" placeholder="Correo" name="correo" class="box"></input>
-							<textarea type="text" placeholder="Envianos un Mensaje" name="mensaje" class="box"></textarea>
+							<h4>Información personal</h4>
+							<input type="text" placeholder="Nombre(s)" name="user_firstname" class="box">
+							<input type="text" placeholder="Apellidos" name="user_lastname" class="box">
+							<h4>Información de Contacto</h4>
+							<input type="text" placeholder="Teléfono" name="user_phone" class="box">
+							<input type="email" placeholder="Correo" name="user_email" class="box">
+							<textarea placeholder="Envianos un Mensaje" name="user_message" class="box"></textarea>
+							<p>
+								<input type="checkbox" name="user_state" id="acepto">
+								<label for="acepto">Quiero recibir notificaciones sobre las novedades</label>
+							</p>
 							<input type="submit" value="PASAME LA INFO!" class="box boton-blanco">
 						</form>
 					</div>
@@ -163,7 +169,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="column column-25 column-movil-100">
-					<img src="img/logo-white.png" class="logo-footer">
+					<img src="img/logo-white.svg" class="logo-footer">
 					<div class="direccion">
 						<p>Av. Mcal Castilla 407, Miraflores</p>
 						<p>Arequipa - Perú</p>
